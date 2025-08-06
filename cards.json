@@ -14,7 +14,10 @@
             "emphasis": "",
             "text": ""
         },
-        "keywords": {},
+        "keywords": {
+            "line": true,
+            "face-down": true
+        },
         "set": "AX01"
     },
     {
@@ -208,7 +211,7 @@
         },
         "middle": {
             "emphasis": "",
-            "text": "Draw the top card of your opponent's deck. Your opponent draws the top card of your deck."
+            "text": "Draw the top card of your opponent´s deck. Your opponent draws the top card of your deck."
         },
         "bottom": {
             "emphasis": "",
@@ -255,6 +258,7 @@
             "text": "Draw the top card of your opponent´s deck. Your opponent draws the top card of your deck."
         },
         "keywords": {
+            "line": true,
             "flip": true,
             "draw": true
         },
@@ -335,6 +339,7 @@
             "text": "Discard your hand. Draw that many cards."
         },
         "keywords": {
+            "hand": true,
             "discard": true
         },
         "set": "MN02"
@@ -375,6 +380,8 @@
             "text": ""
         },
         "keywords": {
+            "hand": true,
+            "line": true
         },
         "set": "MN02"
     },
@@ -395,6 +402,7 @@
         },
         "keywords": {
             "reveal": true,
+            "hand": true,
             "draw": true
         },
         "set": "MN02"
@@ -498,7 +506,8 @@
             "text": "You may play this card in any line on either player´s side."
         },
         "keywords": {
-            "flip": true
+            "flip": true,
+            "line": true
         },
         "set": "MN02"
     },
@@ -620,6 +629,7 @@
         },
         "keywords": {
             "draw": true,
+            "hand": true,
             "discard": true
         },
         "set": "MN02"
@@ -660,6 +670,7 @@
             "text": "If your opponent has a highter total value than you do in this line, draw 1 card."
         },
         "keywords": {
+            "line": true,
             "draw": true
         },
         "set": "MN02"
@@ -680,7 +691,8 @@
             "text": "You may shift this card to the line where your opponent has their highest total value."
         },
         "keywords": {
-            "shift": true
+            "shift": true,
+            "line": true
         },
         "set": "MN02"
     },
@@ -720,6 +732,7 @@
             "text": ""
         },
         "keywords": {
+            "line": true,
             "flip": true
         },
         "set": "MN02"
@@ -786,7 +799,8 @@
             "flip": true,
             "covered": true,
             "line": true,
-            "stack": true
+            "stack": true,
+            "face-down": true
         },
         "set": "MN01"
     },
@@ -807,7 +821,8 @@
         },
         "keywords": {
             "play": true,
-            "line": true
+            "line": true,
+            "face-down": true
         },
         "set": "MN01"
     },
@@ -827,7 +842,8 @@
             "text": ""
         },
         "keywords": {
-            "shift": true
+            "shift": true,
+            "face-down": true
         },
         "set": "MN01"
     },
@@ -930,7 +946,8 @@
             "text": ""
         },
         "keywords": {
-            "delete": true
+            "delete": true,
+            "face-down": true
         },
         "set": "MN01"
     },
@@ -1129,6 +1146,7 @@
         },
         "keywords": {
             "draw": true,
+            "hand": true,
             "discard": true
         },
         "set": "MN02"
@@ -1169,7 +1187,9 @@
             "text": "Shift 1 of your opponent´s covered or uncovered cards in this line."
         },
         "keywords": {
-            "shift": true
+            "shift": true,
+            "covered": true,
+            "line": true
         },
         "set": "MN02"
     },
@@ -1357,7 +1377,8 @@
         },
         "keywords": {
             "play": true,
-            "line": true
+            "line": true,
+            "face-down": true
         },
         "set": "MN01"
     },
@@ -1422,7 +1443,8 @@
         },
         "keywords": {
             "shift": true,
-            "line": true
+            "line": true,
+            "face-down": true
         },
         "set": "MN01"
     },
@@ -1463,7 +1485,8 @@
         },
         "keywords": {
             "play": true,
-            "line": true
+            "line": true,
+            "face-down": true
         },
         "set": "MN01"
     },
@@ -1608,6 +1631,7 @@
         "keywords": {
             "shift": true,
             "play": true,
+            "line": true,
             "discard": true
         },
         "set": "MN02"
@@ -1708,6 +1732,7 @@
             "text": ""
         },
         "keywords": {
+            "hand": true
         },
         "set": "MN02"
     },
@@ -1730,7 +1755,8 @@
             "delete": true,
             "play": true,
             "covered": true,
-            "line": true
+            "line": true,
+            "face-down": true
         },
         "set": "MN01"
     },
@@ -1771,7 +1797,8 @@
         },
         "keywords": {
             "draw": true,
-            "flip": true
+            "flip": true,
+            "face-down": true
         },
         "set": "MN01"
     },
@@ -1793,7 +1820,8 @@
         "keywords": {
             "play": true,
             "covered": true,
-            "line": true
+            "line": true,
+            "face-down": true
         },
         "set": "MN01"
     },
@@ -1897,7 +1925,8 @@
             "draw": true,
             "flip": true,
             "reveal": true,
-            "shift": true
+            "shift": true,
+            "face-down": true
         },
         "set": "MN01"
     },
@@ -1918,7 +1947,8 @@
         },
         "keywords": {
             "shift": true,
-            "line": true
+            "line": true,
+            "face-down": true
         },
         "set": "MN01"
     },
@@ -1938,7 +1968,8 @@
             "text": ""
         },
         "keywords": {
-            "reveal": true
+            "reveal": true,
+            "hand": true
         },
         "set": "MN01"
     },
@@ -2042,7 +2073,9 @@
         },
         "keywords": {
             "flip": true,
-            "reveal": true
+            "reveal": true,
+            "hand": true
+
         },
         "set": "AX01"
     },
@@ -2272,7 +2305,8 @@
             "text": ""
         },
         "keywords": {
-            "line": true
+            "line": true,
+            "face-down": true
         },
         "set": "MN01"
     },
@@ -2356,6 +2390,7 @@
             "text": ""
         },
         "keywords": {
+            "line": true
         },
         "set": "MN02"
     },
@@ -2414,7 +2449,8 @@
             "text": ""
         },
         "keywords": {
-            "flip": true
+            "flip": true,
+            "line": true
         },
         "set": "MN02"
     },
@@ -2475,7 +2511,8 @@
         },
         "keywords": {
             "discard": true,
-            "draw" : true
+            "draw" : true,
+            "hand": true
         },
         "set": "MN02"
     },
@@ -2496,7 +2533,8 @@
         },
         "keywords": {
             "draw": true,
-            "play": true
+            "play": true,
+            "face-down": true
         },
         "set": "MN02"
     },
@@ -2517,7 +2555,8 @@
         },
         "keywords": {
             "discard": true,
-            "flip": true
+            "flip": true,
+            "hand": true
         },
         "set": "MN02"
     },
@@ -2578,7 +2617,8 @@
             "text": ""
         },
         "keywords": {
-            "flip": true
+            "flip": true,
+            "hand": true
         },
         "set": "MN02"
     },
@@ -2681,7 +2721,8 @@
         },
         "keywords": {
             "delete": true,
-            "flip": true
+            "flip": true,
+            "face-down": true
         },
         "set": "MN01"
     },
@@ -2723,7 +2764,8 @@
         "keywords": {
             "discard": true,
             "draw": true,
-            "reveal": true
+            "reveal": true,
+            "hand": true
         },
         "set": "MN01"
     },
@@ -2743,7 +2785,8 @@
             "text": "Flip this card."
         },
         "keywords": {
-            "flip": true
+            "flip": true,
+            "face-down": true
         },
         "set": "MN01"
     },
@@ -2847,6 +2890,7 @@
         },
         "keywords": {
             "play": true,
+            "line": true,
             "face-down": true
         },
         "set": "MN02"
@@ -2888,6 +2932,7 @@
             "text": ""
         },
         "keywords": {
+            "line": true,
             "face-down": true
         },
         "set": "MN02"
@@ -2909,7 +2954,8 @@
         },
         "keywords": {
             "play": true,
-            "face-down": true
+            "face-down": true,
+            "line": true
         },
         "set": "MN02"
     },
@@ -3055,7 +3101,8 @@
             "text": ""
         },
         "keywords": {
-            "shift": true
+            "shift": true,
+            "face-down": true
         },
         "set": "MN01"
     },
@@ -3285,7 +3332,9 @@
         },
         "keywords": {
             "reveal": true,
-            "face-down": true
+            "play": true,
+            "face-down": true,
+            "line": true
         },
         "set": "MN02"
     },
@@ -3506,13 +3555,14 @@
             "text": "Flip 1 card."
         },
         "bottom": {
-            "emphasis": "After your opponent compiles: Y",
+            "emphasis": "After your opponent compiles:",
             "text": "Your opponent discards their hand."
         },
         "keywords": {
             "flip": true,
-            "compiles": true,
-            "discard": true
+            "compile": true,
+            "discard": true,
+            "hand": true
         },
         "set": "MN02"
     },
@@ -3616,7 +3666,8 @@
         },
         "keywords": {
             "play": true,
-            "line": true
+            "line": true,
+            "face-down": true
         },
         "set": "MN01"
     },
