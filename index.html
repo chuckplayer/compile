@@ -307,7 +307,13 @@
         function clearFilters() {
             clearImgFlag();
             generatePng = false;
-            $('#filter-form input[type="checkbox"]').prop('checked', false).trigger('change');
+            // Temporarily unbind the change event to prevent multiple applyFilters calls
+            $('#filter-form').off('change', 'input[type="checkbox"]');
+            $('#filter-form input[type="checkbox"]').prop('checked', false);
+            // Re-bind the change event
+            $('#filter-form').on('change', 'input[type="checkbox"]', function () {
+                applyFilters();
+            });
             applyFilters();
         }
 
