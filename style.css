@@ -17,6 +17,31 @@ body {
     --shadow-color: hsl(0, 0%, 46%);
 }
 
+.assimilation{
+    background-color: hsl(0, 0%, 50%) !important;
+    --shadow-color: hsl(0, 0%, 30%);
+}
+
+.chaos {
+    background-color: hsl(241, 73%, 19%) !important;
+    --shadow-color: hsl(0, 0%, 20%);
+}
+
+.clarity {
+    background-color: hsl(273, 68%, 38%) !important;
+    --shadow-color: hsl(204, 100%, 16%);
+}
+
+.corruption {
+    background-color: hsl(75, 100%, 27%) !important;
+    --shadow-color: hsl(75, 100%, 7%);
+}
+
+.courage {
+    background-color: hsl(34, 62%, 50%) !important;
+    --shadow-color: hsl(0, 0%, 60%);
+}
+
 .darkness {
     background-color: hsl(54, 4%, 47%) !important;
     --shadow-color: hsl(54, 4%, 27%);
@@ -25,6 +50,17 @@ body {
 .death {
     background-color: hsl(229, 7%, 30%) !important;
     --shadow-color: hsl(229, 7%, 10%);
+}
+
+.diversity {
+    background-color: hsl(56, 50%, 42%) !important;
+    --shadow-color: hsl(0, 0%, 30%);
+
+}
+
+.fear{
+    background-color: hsl(0, 78%, 45%) !important;
+    --shadow-color: hsl(0, 0%, 30%);
 }
 
 .fire {
@@ -42,6 +78,11 @@ body {
     --shadow-color: hsl(1, 42%, 26%);
 }
 
+.ice{
+    background-color: hsl(200, 100%, 50%) !important;
+    --shadow-color: hsl(200, 100%, 30%);
+}
+
 .life {
     background-color: hsl(58, 17%, 60%) !important;
     --shadow-color: hsl(58, 17%, 40%);
@@ -57,9 +98,24 @@ body {
     --shadow-color: hsl(352, 36%, 42%);
 }
 
+.luck{
+    background-color: hsl(39, 77%, 41%) !important;
+    --shadow-color: hsl(14, 85%, 29%);
+}
+
 .metal {
     background-color: hsl(18, 6%, 45%) !important;
     --shadow-color: hsl(18, 6%, 25%);
+}
+
+.mirror{
+    background-color: hsl(276, 48%, 44%) !important;
+    --shadow-color: hsl(0, 0%, 30%);
+}
+
+.peace{
+    background-color: hsl(120, 57%, 39%) !important;
+    --shadow-color: hsl(120, 100%, 55%);
 }
 
 .plague {
@@ -72,6 +128,11 @@ body {
     --shadow-color: hsl(266, 9%, 28%);
 }
 
+.smoke{
+    background-color: hsl(0, 0%, 30%) !important;
+    --shadow-color: hsl(0, 0%, 10%);
+}
+
 .speed {
     background-color: hsl(216, 14%, 62%) !important;
     --shadow-color: hsl(216, 14%, 42%);
@@ -80,6 +141,21 @@ body {
 .spirit {
     background-color: hsl(189, 26%, 36%) !important;    
     --shadow-color: hsl(189, 26%, 16%);
+}
+
+.time{
+    background-color: hsl(0, 85%, 28%) !important;
+    --shadow-color: hsl(0, 0%, 30%);
+}
+
+.unity {
+    background-color: hsl(268, 61%, 49%) !important;
+    --shadow-color: hsl(0, 0%, 30%);
+}
+
+.war{
+    background-color: hsl(348, 81%, 25%) !important;
+    --shadow-color: hsl(348, 83%, 27%);
 }
 
 .water {
@@ -126,7 +202,7 @@ body {
     font-family: "Orbitron", sans-serif;
     font-weight: bold;
     text-transform: uppercase;
-    width: 135px;
+    width: 155px;
     border: 2px solid white;
 }
 

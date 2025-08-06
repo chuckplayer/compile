@@ -122,6 +122,609 @@
         "set": "AX01"
     },
     {
+        "protocol": "Assimilation",
+        "value": 0,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": ""
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+        },
+        "set": "AX02"
+    },
+    {
+        "protocol": "Assimilation",
+        "value": 1,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "Discard 1 card. Refresh."
+        },
+        "bottom": {
+            "emphasis": "After a player refreshes:",
+            "text": "Draw the top card of your opponent´s deck. Discard 1 card into their trash."
+        },
+        "keywords": {
+            "discard": true,
+            "refresh": true,
+            "draw": true
+        },
+        "set": "AX02"
+    },
+    {
+        "protocol": "Assimilation",
+        "value": 2,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": ""
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+        },
+        "set": "AX02"
+    },    {
+        "protocol": "Assimilation",
+        "value": 3,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": ""
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+        },
+        "set": "AX02"
+    },
+    {
+        "protocol": "Assimilation",
+        "value": 4,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "Draw the top card of your opponent's deck. Your opponent draws the top card of your deck."
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "draw": true
+        },
+        "set": "AX02"
+    },
+    {
+        "protocol": "Assimilation",
+        "value": 5,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "You discard 1 card."
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "discard": true
+        },
+        "set": "AX02"
+    },
+    {
+        "protocol": "Chaos",
+        "value": 0,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "In each line, flip 1 covered card."
+        },
+        "bottom": {
+            "emphasis": "Start:",
+            "text": "Draw the top card of your opponent´s deck. Your opponent draws the top card of your deck."
+        },
+        "keywords": {
+            "flip": true,
+            "draw": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Chaos",
+        "value": 1,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "Rearrange your protocols. Rearrange your opponent´s protocols."
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "rearrange": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Chaos",
+        "value": 2,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "Shift 1 of your covered cards."
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "shift": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Chaos",
+        "value": 3,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": ""
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": "This card may be played without matching protocols."
+        },
+        "keywords": {
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Chaos",
+        "value": 4,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": ""
+        },
+        "bottom": {
+            "emphasis": "End:",
+            "text": "Discard your hand. Draw that many cards."
+        },
+        "keywords": {
+            "discard": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Chaos",
+        "value": 5,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "You discard 1 card."
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "discard": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Clarity",
+        "value": 0,
+        "top": {
+            "emphasis": "",
+            "text": "Your total value in this line is increased by 1 for each card in your hand."
+        },
+        "middle": {
+            "emphasis": "",
+            "text": ""
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Clarity",
+        "value": 1,
+        "top": {
+            "emphasis": "Start:",
+            "text": "Reveal the top card of your deck. You may discard the top card of your deck."
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "Your opponent reveals their hand."
+        },
+        "bottom": {
+            "emphasis": "When this card would be covered:",
+            "text": "First, draw 3 cards."
+        },
+        "keywords": {
+            "reveal": true,
+            "draw": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Clarity",
+        "value": 2,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "Reveal your deck. Draw 1 card with a value of 1 revealed this way. Shuffle your deck. Play 1 card with a value of 1."
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "reveal": true,
+            "draw": true,
+            "play": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Clarity",
+        "value": 3,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "Reveal your deck. Draw 1 card with a value of 5 revealed this way. Shuffle your deck."
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "reveal": true,
+            "draw": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Clarity",
+        "value": 4,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "You may shuffle your trash into your deck."
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "discard": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Clarity",
+        "value": 5,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "You discard 1 card."
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "discard": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Corruption",
+        "value": 0,
+        "top": {
+            "emphasis": "Flip:",
+            "text": "Flip 1 face-up covered or uncovered card in this stack other than this card."
+        },
+        "middle": {
+            "emphasis": "",
+            "text": ""
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": "You may play this card in any line on either player´s side."
+        },
+        "keywords": {
+            "flip": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Corruption",
+        "value": 1,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "Return 1 card."
+        },
+        "bottom": {
+            "emphasis": "When a card would be returned to your opponent´s hand:",
+            "text": "Put that card on top of their deck face-down instead."
+        },
+        "keywords": {
+            "return": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Corruption",
+        "value": 2,
+        "top": {
+            "emphasis": "After you discard cards:",
+            "text": " Your opponent discards 1 card."
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "Draw 1 card. Discard 1 card."
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "discard": true,
+            "draw": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Corruption",
+        "value": 3,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "You may flip 1 face-up covered card."
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "flip": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Corruption",
+        "value": 5,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "You discard 1 card."
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "discard": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Corruption",
+        "value": 6,
+        "top": {
+            "emphasis": "End:",
+            "text": " Either discard 1 card or delete this card."
+        },
+        "middle": {
+            "emphasis": "",
+            "text": ""
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "discard": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Courage",
+        "value": 0,
+        "top": {
+            "emphasis": "Start:",
+            "text": "If you have no cards in hand, draw 1 card."
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "Draw 1 card."
+        },
+        "bottom": {
+            "emphasis": "End:",
+            "text": "You may discard 1 card. If you do, your opponent discards 1 card."
+        },
+        "keywords": {
+            "draw": true,
+            "discard": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Courage",
+        "value": 1,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "Delete 1 of your opponent´s cards in a line where they have a highter total value than you do"
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "delete": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Courage",
+        "value": 2,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": ""
+        },
+        "bottom": {
+            "emphasis": "End:",
+            "text": "If your opponent has a highter total value than you do in this line, draw 1 card."
+        },
+        "keywords": {
+            "draw": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Courage",
+        "value": 3,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": ""
+        },
+        "bottom": {
+            "emphasis": "End:",
+            "text": "You may shift this card to the line where your opponent has their highest total value."
+        },
+        "keywords": {
+            "shift": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Courage",
+        "value": 5,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "You discard 1 card."
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "discard": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Courage",
+        "value": 6,
+        "top": {
+            "emphasis": "End:",
+            "text": "If your opponent has a higher value in this line than you do, flip this card."
+        },
+        "middle": {
+            "emphasis": "",
+            "text": ""
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "flip": true
+        },
+        "set": "MN02"
+    },
+    {
         "protocol": "Darkness",
         "value": 0,
         "top": {
@@ -371,6 +974,246 @@
         },
         "set": "MN01"
     },
+    {
+        "protocol": "Diversity",
+        "value": 1,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": ""
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+        },
+        "set": "AX02"
+    },
+    {
+        "protocol": "Diversity",
+        "value": 2,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": ""
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+        },
+        "set": "AX02"
+    },
+    {
+        "protocol": "Diversity",
+        "value": 3,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": ""
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+        },
+        "set": "AX02"
+    },
+    {
+        "protocol": "Diversity",
+        "value": 4,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": ""
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+        },
+        "set": "AX02"
+    },
+    {
+        "protocol": "Diversity",
+        "value": 5,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "You discard 1 card."
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "discard": true
+        },
+        "set": "AX02"
+    },
+    {
+        "protocol": "Diversity",
+        "value": 6,
+        "top": {
+            "emphasis": "End:",
+            "text": "If there are not at least 3 different protocols on cards in the field, delete this card."
+        },
+        "middle": {
+            "emphasis": "",
+            "text": ""
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "delete" :true
+        },
+        "set": "AX02"
+    },
+    {
+        "protocol": "Fear",
+        "value": 0,
+        "top": {
+            "emphasis": "",
+            "text": "During your turn, your opponent´s cards do not have middle commands."
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "Shift or flip 1 card."
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "shift": true,
+            "flip": true
+        },
+        "set": "MN02"
+    },
+
+    {
+        "protocol": "Fear",
+        "value": 1,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "Draw 2 cards. Your opponent discards their hand and draws the amount of cards discarded minus 1."
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "draw": true,
+            "discard": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Fear",
+        "value": 2,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "Return 1 of your opponent´s cards."
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "return": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Fear",
+        "value": 3,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": ""
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": "Shift 1 of your opponent´s covered or uncovered cards in this line."
+        },
+        "keywords": {
+            "shift": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Fear",
+        "value": 4,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "Your opponent discards 1 random card."
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "discard": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Fear",
+        "value": 5,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": ""
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": "You discard a card."
+        },
+        "keywords": {
+            "discard": true
+        },
+        "set": "MN02"
+    },
+
     {
         "protocol": "Fire",
         "value": 0,
@@ -748,6 +1591,127 @@
         "set": "AX01"
     },
     {
+        "protocol": "Ice",
+        "value": 1,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "You may shift this card."
+        },
+        "bottom": {
+            "emphasis": "After your opponent plays a card in this line:",
+            "text": "Your opponent discards 1 card."
+        },
+        "keywords": {
+            "shift": true,
+            "play": true,
+            "discard": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Ice",
+        "value": 5,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "You discard 1 card."
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "discard": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Ice",
+        "value": 2,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "Shift 1 other card."
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "shift": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Ice",
+        "value": 3,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "If this card is covered, you may shift it."
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "shift": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Ice",
+        "value": 5,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "You discard 1 card."
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "discard": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Ice",
+        "value": 6,
+        "top": {
+            "emphasis": "",
+            "text": "If you have any cards in your hand, you cannot draw cards."
+        },
+        "middle": {
+            "emphasis": "",
+            "text": ""
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+        },
+        "set": "MN02"
+    },
+    {
         "protocol": "Life",
         "value": 0,
         "top": {
@@ -1123,6 +2087,134 @@
         "set": "AX01"
     },
     {
+        "protocol": "Luck",
+        "value": 0,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "State a number. Draw 3 cards. Reveal 1 card drawn with the face-up value of your stated number. You may play it."
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "draw": true,
+            "reveal": true,
+            "play": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Luck",
+        "value": 1,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "Play the top card of your deck face-down. Flip that card, ignoring its middle commands."
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "play": true,
+            "face-down": true,
+            "flip": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Luck",
+        "value": 2,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "Discard the top card of your deck. Draw cards equal to the value of the discarded card."
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "discard": true,
+            "draw": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Luck",
+        "value": 3,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "State a protocol. Discard the top card of your opponent´s deck. If the discarded card matches the stated protocol, delete 1 card."
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "discard": true,
+            "delete": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Luck",
+        "value": 4,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "Discard the top card of your deck. Delete 1 covered or uncovered card that shares a value with the discarded card."
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "discard": true,
+            "delete": true,
+            "covered": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Luck",
+        "value": 5,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "You discard 1 card."
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "discard": true
+        },
+        "set": "MN02"
+    },
+    {
         "protocol": "Metal",
         "value": 0,
         "top": {
@@ -1247,6 +2339,248 @@
             "covered": true
         },
         "set": "MN01"
+    },
+    {
+        "protocol": "Mirror",
+        "value": 0,
+        "top": {
+            "emphasis": "",
+            "text": "Your total value in this line is increased by 1 for each of your opponent´s cards in this line."
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "You discard 1 card."
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Mirror",
+        "value": 1,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "You discard 1 card."
+        },
+        "bottom": {
+            "emphasis": "End:",
+            "text": "You may resolve the middle command of 1 of your opponent´s cards as if it were on this card."
+        },
+        "keywords": {
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Mirror",
+        "value": 2,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "Swap all of your cards in one of your stacks with another one of your stacks."
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "swap": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Mirror",
+        "value": 3,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "Flip 1 of your cards. Flip 1 of your opponent´s cards in the same line."
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "flip": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Mirror",
+        "value": 4,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "You discard 1 card."
+        },
+        "bottom": {
+            "emphasis": "After your opponent draws cards:",
+            "text": "Draw 1 card."
+        },
+        "keywords": {
+            "draw": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Mirror",
+        "value": 5,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "You discard 1 card."
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "discard": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Peace",
+        "value": 1,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "Both players discard their hand."
+        },
+        "bottom": {
+            "emphasis": "End:",
+            "text": "If your hand is empty, draw 1 card."
+        },
+        "keywords": {
+            "discard": true,
+            "draw" : true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Peace",
+        "value": 2,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "Draw 1 card. Play 1 card face-down."
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "draw": true,
+            "play": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Peace",
+        "value": 3,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "You may discard 1 card. Flip 1 card thas has a value greater than the number of cards in your hand."
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "discard": true,
+            "flip": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Peace",
+        "value": 4,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "You discard 1 card."
+        },
+        "bottom": {
+            "emphasis": "After you discard cards during your opponent´s turn:",
+            "text": "Draw 1 card."
+        },
+        "keywords": {
+            "discard": true,
+            "draw": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Peace",
+        "value": 5,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "You discard 1 card."
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "discard": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Peace",
+        "value": 6,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "If you have more then 1 card in your hand, flip this card."
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "flip": true
+        },
+        "set": "MN02"
     },
     {
         "protocol": "Plague",
@@ -1497,6 +2831,131 @@
         "set": "MN01"
     },
     {
+        "protocol": "Smoke",
+        "value": 0,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "Play the top card of your deck face-down in each line with a face-down card."
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "play": true,
+            "face-down": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Smoke",
+        "value": 1,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "Flip 1 of your cards. You may shift that card."
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "flip": true,
+            "shift": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Smoke",
+        "value": 2,
+        "top": {
+            "emphasis": "",
+            "text": "Your total value in this line is increased by 1 for each face-down card in this line."
+        },
+        "middle": {
+            "emphasis": "",
+            "text": ""
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "face-down": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Smoke",
+        "value": 3,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "Play 1 card face-down in a line with a face-down card."
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "play": true,
+            "face-down": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Smoke",
+        "value": 4,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "Shift 1 covered face-down card."
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "shift": true,
+            "covered": true,
+            "face-down": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Smoke",
+        "value": 5,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "You discard 1 card."
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "discard": true
+        },
+        "set": "MN02"
+    },
+    {
         "protocol": "Speed",
         "value": 0,
         "top": {
@@ -1744,6 +3203,381 @@
             "discard": true
         },
         "set": "MN01"
+    },
+    {
+        "protocol": "Time",
+        "value": 0,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "Play 1 card from your trash. Shuffle your trash into your deck."
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "play": true,
+            "shuffle": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Time",
+        "value": 1,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "Flip 1 covered card. Discard your entire deck."
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "flip": true,
+            "discard": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Time",
+        "value": 2,
+        "top": {
+            "emphasis": "After you shuffle your deck:",
+            "text": "Draw 1 card and you may shift this card."
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "If there are any cards in your trash, you may shuffle your trash into your deck."
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "shuffle": true,
+            "draw": true,
+            "shift": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Time",
+        "value": 3,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "Reveal 1 card from your trash. Play it face-down in another line."
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "reveal": true,
+            "face-down": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Time",
+        "value": 4,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "Draw 2 cards. Discard 2 cards."
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "draw": true,
+            "discard": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Time",
+        "value": 5,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "You discard 1 card."
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "discard": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "Unity",
+        "value": 0,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "If there is another Unity card in the field, either flip 1 card or draw 1 card."
+        },
+        "bottom": {
+            "emphasis": "When this card would be flipped by a Unity card: ",
+            "text": "First flip one card or draw 1 card."
+        },
+        "keywords": {
+            "flip": true,
+            "draw": true
+        },
+        "set": "AX02"
+    },
+    {
+        "protocol": "Unity",
+        "value": 1,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": ""
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "discard": true
+        },
+        "set": "AX02"
+    },
+    {
+        "protocol": "Unity",
+        "value": 2,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": ""
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "discard": true
+        },
+        "set": "AX02"
+    },
+    {
+        "protocol": "Unity",
+        "value": 3,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "If there is another Unity card in the field, you may flip 1 card."
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "flip": true
+        },
+        "set": "AX02"
+    },
+    {
+        "protocol": "Unity",
+        "value": 4,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": ""
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "discard": true
+        },
+        "set": "AX02"
+    },
+    {
+        "protocol": "Unity",
+        "value": 5,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "You discard 1 card."
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+        },
+        "set": "AX02"
+    },
+    {
+        "protocol": "War",
+        "value": 0,
+        "top": {
+            "emphasis": "After you refresh:",
+            "text": "You may flip this card."
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "You discard 1 card."
+        },
+        "bottom": {
+            "emphasis": "After your opponent draws cards:",
+            "text": "You may delete 1 card."
+        },
+        "keywords": {
+            "refresh": true,
+            "flip": true,
+            "draw": true,
+            "delete": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "War",
+        "value": 1,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "You discard 1 card."
+        },
+        "bottom": {
+            "emphasis": "After your opponent refreshes:",
+            "text": "Discard any number of cards. Refresh."
+        },
+        "keywords": {
+            "refresh": true,
+            "discard": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "War",
+        "value": 2,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "Flip 1 card."
+        },
+        "bottom": {
+            "emphasis": "After your opponent compiles: Y",
+            "text": "Your opponent discards their hand."
+        },
+        "keywords": {
+            "flip": true,
+            "compiles": true,
+            "discard": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "War",
+        "value": 3,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "Draw 1 card."
+        },
+        "bottom": {
+            "emphasis": "After your opponent discards cards:",
+            "text": "You may play 1 card face-down."
+        },
+        "keywords": {
+            "draw": true,
+            "discard": true,
+            "play": true,
+            "face-down": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "War",
+        "value": 4,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "our opponent discards 1 card."
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "discard": true
+        },
+        "set": "MN02"
+    },
+    {
+        "protocol": "War",
+        "value": 5,
+        "top": {
+            "emphasis": "",
+            "text": ""
+        },
+        "middle": {
+            "emphasis": "",
+            "text": "You discard 1 card."
+        },
+        "bottom": {
+            "emphasis": "",
+            "text": ""
+        },
+        "keywords": {
+            "discard": true
+        },
+        "set": "MN02"
     },
     {
         "protocol": "Water",

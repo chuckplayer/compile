@@ -1,92 +1,182 @@
 [
     {
         "protocol": "Apathy",
-        "top": "Uncaring, unfeeling.",
+        "top": "Uncaring, unfeeling",
         "bottom": "Flip Face-Down",
         "set": "AX01"
     },
     {
+        "protocol": "Hate",
+        "top": "Ultimate disdain",
+        "bottom": "Delete theirs and yours",
+        "set": "AX01"
+    },
+    {
+        "protocol": "Love",
+        "top": "Giving is the true gift",
+        "bottom": "Draw, Gift, Exchange",
+        "set": "AX01"
+    },
+    {
+        "protocol": "Assimilation",
+        "top": "Complete exchange and understanding",
+        "bottom": "Exchange, Play",
+        "set": "AX02"
+    },
+    {
+        "protocol": "Diversity",
+        "top": "Our differences are our strength",
+        "bottom": "Play, Compare, Covered",
+        "set": "AX02"
+    },
+    {
+        "protocol": "Unity",
+        "top": "Together we are strong",
+        "bottom": "Cover, Flip, Compile",
+        "set": "AX02"
+    },
+    {
         "protocol": "Darkness",
-        "top": "An absence of light.",
+        "top": "An absence of light",
         "bottom": "Draw, Shift, Manipulate",
         "set": "MN01"
     },
     {
         "protocol": "Death",
-        "top": "Nothing shall survive.",
+        "top": "Nothing shall survive",
         "bottom": "Delete, Draw",
         "set": "MN01"
     },
     {
         "protocol": "Fire",
-        "top": "Burn at both ends.",
+        "top": "Burn at both ends",
         "bottom": "Discard for effect",
         "set": "MN01"
     },
     {
         "protocol": "Gravity",
-        "top": "Draw ever inward.",
+        "top": "Draw ever inward",
         "bottom": "Shift, Flip, Draw",
         "set": "MN01"
     },
     {
-        "protocol": "Hate",
-        "top": "Ultimate disdain.",
-        "bottom": "Delete theirs and yours",
-        "set": "AX01"
-    },
-    {
         "protocol": "Life",
-        "top": "Bring about new growth.",
+        "top": "Bring about new growth",
         "bottom": "Flip, Top Deck Play, Draw",
         "set": "MN01"
     },
     {
         "protocol": "Light",
-        "top": "Burn away the dark.",
+        "top": "Burn away the dark",
         "bottom": "Draw, Flip, Shift",
         "set": "MN01"
     },
     {
-        "protocol": "Love",
-        "top": "Giving is the true gift.",
-        "bottom": "Draw, Gift, Exchange",
-        "set": "AX01"
-    },
-    {
         "protocol": "Metal",
-        "top": "Hardened against all.",
+        "top": "Hardened against all",
         "bottom": "Prevent, Draw, Flip",
         "set": "MN01"
     },
     {
         "protocol": "Plague",
-        "top": "Slow death from within.",
+        "top": "Slow death from within",
         "bottom": "Force Discard, Flip",
         "set": "MN01"
     },
     {
         "protocol": "Psychic",
-        "top": "Know your foe's mind.",
+        "top": "Know your foe's mind",
         "bottom": "Draw, Manipulate, Shift",
         "set": "MN01"
     },
     {
         "protocol": "Speed",
-        "top": "Quicken with every step.",
+        "top": "Quicken with every step",
         "bottom": "Draw, Play, Shift",
         "set": "MN01"
     },
     {
         "protocol": "Spirit",
-        "top": "True strength from within.",
+        "top": "True strength from within",
         "bottom": "Flip, Shift, Draw",
         "set": "MN01"
     },
     {
         "protocol": "Water",
-        "top": "Wash away and renew.",
+        "top": "Wash away and renew",
         "bottom": "Return, Draw, Flip",
         "set": "MN01"
+    },
+    {
+        "protocol": "Chaos",
+        "top": "Unpredictable Beware",
+        "bottom": "Draw, Rearrange, Covered",
+        "set": "MN02"
+    },
+    {
+        "protocol": "Clarity",
+        "top": "I can see my path clearly",
+        "bottom": "Draw, Reveal",
+        "set": "MN02"
+    },
+    {
+        "protocol": "Corruption",
+        "top": "One bad apple spoils the bunch",
+        "bottom": "Flip, Discard",
+        "set": "MN02"
+    },
+    {
+        "protocol": "Courage",
+        "top": "A blaze in the face of adversity",
+        "bottom": "Draw, Compare",
+        "set": "MN02"
+    },
+    {
+        "protocol": "Fear",
+        "top": "Run away",
+        "bottom": "Shift, Discard",
+        "set": "MN02"
+    },
+    {
+        "protocol": "Ice",
+        "top": "Cold, Strong, and Slick",
+        "bottom": "Shift, Prevent",
+        "set": "MN02"
+    },
+    {
+        "protocol": "Luck",
+        "top": "Roll the dice",
+        "bottom": "Random, Delete, Play",
+        "set": "MN02"
+    },
+    {
+        "protocol": "Mirror",
+        "top": "A Reflection of the truth",
+        "bottom": "Shift, Repeat",
+        "set": "MN02"
+    },
+    {
+        "protocol": "Peace",
+        "top": "Respite and solace as long as we can",
+        "bottom": "Mutual Discard, Draw",
+        "set": "MN02"
+    },
+    {
+        "protocol": "Smoke",
+        "top": " A blanket of obfuscation",
+        "bottom": "Face-Down, Shift",
+        "set": "MN02"
+    },
+    {
+        "protocol": "Time",
+        "top": "Forward to the past",
+        "bottom": "Discard, Trash",
+        "set": "MN02"
+    },
+    {
+        "protocol": "War",
+        "top": "Raging conflict, but to what end?",
+        "bottom": "React, Discard",
+        "set": "MN02"
     }
 ]
