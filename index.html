@@ -9,11 +9,9 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/lz-string@1.4.4/libs/lz-string.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
@@ -30,16 +28,16 @@
                     <div class="search-wrapper">
                         <i class="material-icons search-icon">search</i>
                         <input id="card-search" type="text" placeholder="Search cards…" autocomplete="off">
-                        <button id="clear-search" class="btn-flat" title="Clear search" style="display:none">
+                        <button id="clear-search" title="Clear search" style="display:none">
                             <i class="material-icons">close</i>
                         </button>
                     </div>
-                    <a data-target="filters" class="modal-trigger filter-btn tooltipped" data-position="bottom" data-tooltip="Filter Cards">
+                    <a class="filter-btn" data-tooltip="Filter Cards" aria-label="Filter Cards">
                         <i class="material-icons">filter_list</i>
                         <span class="filter-label">Filters</span>
                         <span id="active-filters-count" class="filter-badge" style="display:none">0</span>
                     </a>
-                    <a id="clear-filters" class="nav-icon-btn tooltipped" data-position="bottom" data-tooltip="Clear All Filters" title="Clear Filters">
+                    <a id="clear-filters" class="nav-icon-btn" data-tooltip="Clear All Filters" title="Clear Filters">
                         <i class="material-icons">refresh</i>
                     </a>
                 </div>
@@ -47,14 +45,14 @@
         </nav>
     </div>
 
-    <!-- Filter Modal -->
-    <div id="filters" class="modal filter-modal modal-fixed-footer">
+    <!-- Filter Sidebar -->
+    <dialog id="filters" class="filter-sidebar">
         <div class="modal-header-bar">
             <i class="material-icons">filter_list</i>
             Filters
             <span id="modal-filters-count" class="modal-filter-badge" style="display:none">0</span>
         </div>
-        <div class="modal-content filter-modal-content">
+        <div class="filter-sidebar-content">
             <form id="filter-form">
 
                 <fieldset class="filter-group">
@@ -87,24 +85,25 @@
 
             </form>
         </div>
-        <div class="modal-footer">
-            <a id="modal-clear-filters" href="#!" class="btn-flat modal-filter-clear">
+        <div class="filter-sidebar-footer">
+            <a id="modal-clear-filters" href="#!" class="modal-filter-clear">
                 <i class="material-icons left">refresh</i>Clear All
             </a>
-            <a href="#!" class="modal-close btn modal-close-btn">Done</a>
+            <button id="filter-done-btn" class="filter-done-btn">Done</button>
         </div>
-    </div>
+    </dialog>
 
 
     <!-- Toolbar: card count + group toggle -->
     <div id="view-toolbar">
         <span id="card-count" class="card-count-label"></span>
+        <div id="active-filter-chips"></div>
         <div class="group-toggle">
-            <a id="btn-group" class="group-btn tooltipped active-group" data-position="top" data-tooltip="Group by Protocol">
+            <a id="btn-group" class="group-btn active-group" data-tooltip="Group by Protocol">
                 <i class="material-icons">account_tree</i>
                 <span>Grouped</span>
             </a>
-            <a id="btn-ungroup" class="group-btn tooltipped" data-position="top" data-tooltip="Show all cards flat">
+            <a id="btn-ungroup" class="group-btn" data-tooltip="Show all cards flat">
                 <i class="material-icons">grid_view</i>
                 <span>All Cards</span>
             </a>
@@ -112,7 +111,7 @@
     </div>
 
     <div class="container">
-        <ul id="protocolList" class="collapsible popout"></ul>
+        <ul id="protocolList"></ul>
         <div id="content"></div>
     </div>
 
@@ -181,9 +180,26 @@
                     }
                 }
 
-                $('#protocolList').collapsible();
-                $('.modal').modal();
-                $('.tooltipped').tooltip();
+                // Native collapsible — delegate on header click
+                $(document).on('click', '.protocol-header', function () {
+                    $(this).closest('li').toggleClass('active');
+                });
+
+                // Filter sidebar open/close
+                $('.filter-btn').on('click', function () {
+                    document.getElementById('filters').showModal();
+                });
+
+                $('#filter-done-btn').on('click', function () {
+                    document.getElementById('filters').close();
+                });
+
+                // Close sidebar when clicking backdrop
+                document.getElementById('filters').addEventListener('click', function (e) {
+                    if (e.target === this) {
+                        this.close();
+                    }
+                });
 
                 $('#clear-filters').on('click', function () {
                     clearFilters();
@@ -402,6 +418,45 @@
                 $('#active-filters-count').hide();
                 $('#modal-filters-count').hide();
             }
+
+            // Render active filter chips in toolbar
+            let chipsContainer = $('#active-filter-chips');
+            chipsContainer.empty();
+
+            let categoryLabels = {
+                'protocol': 'Protocol',
+                'value': 'Value',
+                'keyword': 'Keyword',
+                'set': 'Set'
+            };
+
+            let filterSelectors = [
+                { selector: '#protocol-filter input[name="protocol"]:checked', category: 'protocol' },
+                { selector: '#value-filter input[name="value"]:checked', category: 'value' },
+                { selector: '#keyword-filter input[name="keyword"]:checked', category: 'keyword' },
+                { selector: '#sets-filter input[name="set"]:checked', category: 'set' }
+            ];
+
+            filterSelectors.forEach(function (fs) {
+                $(fs.selector).each(function () {
+                    let val = $(this).val();
+                    let checkboxId = $(this).attr('id');
+                    let label = categoryLabels[fs.category] + ': ' + val;
+                    let chip = $('<span class="active-chip"></span>')
+                        .attr('data-filter-id', checkboxId)
+                        .text(label);
+                    let removeBtn = $('<button class="chip-remove" aria-label="Remove filter">×</button>');
+                    chip.append(removeBtn);
+                    chipsContainer.append(chip);
+                });
+            });
+
+            // Chip remove handler
+            chipsContainer.find('.chip-remove').on('click', function () {
+                let checkboxId = $(this).closest('.active-chip').attr('data-filter-id');
+                $('#' + checkboxId).prop('checked', false);
+                applyFilters();
+            });
         }
 
         function toggleGroupByProtocol(group) {
@@ -410,12 +465,6 @@
         }
 
         function displayData(displayItems) {
-            var tooltipElements = document.querySelectorAll('.tooltipped');
-            tooltipElements.forEach(function(el) {
-                var instance = M.Tooltip.getInstance(el);
-                if (instance) instance.destroy();
-            });
-
             let groupedData = groupProtocolDataToggle ? groupByProtocol(displayItems) : displayItems;
             let contentDiv = $('#content');
             let contentUL = $('#protocolList');
@@ -427,7 +476,7 @@
             $('#card-count').text(displayItems.length + ' card' + (displayItems.length !== 1 ? 's' : ''));
 
             if (groupProtocolDataToggle === false) {
-                // Handle ungrouped data
+                // Handle ungrouped data — flat grid
                 let rowDiv = $('<div>').addClass('row');
 
                 $.each(groupedData, function (index, item) {
@@ -435,10 +484,12 @@
                     rowDiv.append(card);
                 });
 
+                // Force reflow to retrigger animations
+                void rowDiv[0];
                 contentUL.append(rowDiv);
             } else {
                 $.each(groupedData, function (protocol, items) {
-                    let protocolList = $('<li>');
+                    let protocolList = $('<li>').addClass('active');
                     let protocolClass = sanitizeProtocolName(protocol.toLowerCase());
                     let protocolInfo = protocols[protocol.trim().toLowerCase()];
                     let protocolHeader = $('<div>').addClass('protocol-header collapsible-header ' + protocolClass);
@@ -454,6 +505,7 @@
                     }
                     headerHTML += '</div>';
                     headerHTML += '<span class="protocol-badge">' + items.length + '</span>';
+                    headerHTML += '<i class="material-icons chevron-icon">expand_more</i>';
 
                     protocolHeader.html(headerHTML);
                     protocolList.append(protocolHeader);
@@ -470,10 +522,10 @@
                     protocolList.append(protocolRow);
                     contentUL.append(protocolList);
                 });
-            }
 
-            // Re-initialize tooltips
-            $('.tooltipped').tooltip();
+                // Force reflow to retrigger card animations
+                void contentUL[0].offsetWidth;
+            }
 
             if (generatePng) {
                 setTimeout(function () {
@@ -521,11 +573,9 @@
                 let toolTipText = getTooltipText(sectionType);
                 let sectionLabel = sectionType.charAt(0).toUpperCase() + sectionType.slice(1);
                 let section = $('<div>')
-                    .addClass('card-section has-background tooltipped')
+                    .addClass('card-section has-background')
                     .attr('data-tooltip', toolTipText)
-                    .attr('data-position', 'top')
                     .html('<span class="section-type-label">' + sectionLabel + '</span>' + emphasisText + sectionData.text);
-                section.tooltip();
                 return section;
             } else {
                 let section = $('<div>')
@@ -536,7 +586,7 @@
         }
 
         function createCard(item) {
-            let colDiv = $('<div>').addClass('col card-col');
+            let colDiv = $('<div>').addClass('card-col');
             let protocolClass = sanitizeProtocolName(item.protocol.toLowerCase());
             let cardDiv = $('<div>').addClass('card fixed-height-card ' + protocolClass).attr('id', 'card-' + item.protocol.toLowerCase() + '-' + item.value);
             let cardContentDiv = $('<div>').addClass('card-content');
@@ -584,7 +634,6 @@
             if (params.sets.length > 0) {
                 $('#sets-filter').val(params.sets);
             }
-            $('select').formSelect();
         }
 
         function updateUIWithFilters(params) {
@@ -717,7 +766,7 @@
                 if (filters.protocols.length === 1 && filters.values.length === 1 && filters.img === 'true') {
                     generatePng = true;
                     groupProtocolDataToggle = false;
-                    generateCardName = params.protocols[0] + '-' + params.values[0];
+                    generateCardName = filters.protocols[0] + '-' + filters.values[0];
                 } else {
                     generatePng = false;
                 }
