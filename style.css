@@ -14,13 +14,20 @@
     --color-text-muted: rgba(232, 234, 240, 0.6);
     --color-white: #ffffff;
     --font-brand: "Orbitron", sans-serif;
-    --font-body: 'Roboto', sans-serif;
+    --font-body: 'Inter', sans-serif;
     --radius-sm: 6px;
     --radius-md: 12px;
     --radius-lg: 18px;
     --radius-xl: 24px;
     --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.45), 0 2px 8px rgba(0, 0, 0, 0.3);
     --transition: 0.2s ease;
+    /* Type scale */
+    --text-xs: 0.75rem;
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.25rem;
+    --text-2xl: 1.5rem;
 }
 
 /* =====================================================
@@ -41,44 +48,291 @@ body {
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: center 65px;
+    background-position: center 52px;
     color: var(--color-text);
     -webkit-font-smoothing: antialiased;
+    padding-top: 52px;
 }
 
 /* =====================================================
    Protocol Color Palette
    ===================================================== */
-.apathy         { background-color: hsl(0, 0%, 56%) !important;   --shadow-color: hsl(0, 0%, 30%); }
-.assimilation   { background-color: hsl(0, 0%, 42%) !important;   --shadow-color: hsl(0, 0%, 22%); }
-.chaos          { background-color: hsl(241, 73%, 19%) !important; --shadow-color: hsl(0, 0%, 10%); }
-.clarity        { background-color: hsl(273, 68%, 30%) !important; --shadow-color: hsl(204, 100%, 10%); }
-.corruption     { background-color: hsl(75, 100%, 22%) !important; --shadow-color: hsl(75, 100%, 5%); }
-.courage        { background-color: hsl(34, 62%, 42%) !important;  --shadow-color: hsl(0, 0%, 40%); }
-.darkness       { background-color: hsl(54, 4%, 38%) !important;   --shadow-color: hsl(54, 4%, 18%); }
-.death          { background-color: hsl(229, 7%, 24%) !important;  --shadow-color: hsl(229, 7%, 8%); }
-.diversity      { background-color: hsl(56, 50%, 34%) !important;  --shadow-color: hsl(0, 0%, 20%); }
-.fear           { background-color: hsl(0, 78%, 36%) !important;   --shadow-color: hsl(0, 0%, 20%); }
-.fire           { background-color: hsl(30, 53%, 55%) !important;  --shadow-color: hsl(30, 53%, 30%); }
-.gravity        { background-color: hsl(325, 22%, 36%) !important; --shadow-color: hsl(325, 22%, 16%); }
-.hate           { background-color: hsl(1, 42%, 36%) !important;   --shadow-color: hsl(1, 42%, 16%); }
-.ice            { background-color: hsl(200, 80%, 40%) !important; --shadow-color: hsl(200, 100%, 20%); }
-.life           { background-color: hsl(58, 17%, 48%) !important;  --shadow-color: hsl(58, 17%, 28%); }
-.light          { background-color: hsl(35, 17%, 54%) !important;  --shadow-color: hsl(35, 17%, 34%); }
-.love           { background-color: hsl(352, 36%, 50%) !important; --shadow-color: hsl(352, 36%, 28%); }
-.luck           { background-color: hsl(39, 77%, 32%) !important;  --shadow-color: hsl(14, 85%, 18%); }
-.metal          { background-color: hsl(18, 6%, 36%) !important;   --shadow-color: hsl(18, 6%, 16%); }
-.mirror         { background-color: hsl(276, 48%, 34%) !important; --shadow-color: hsl(0, 0%, 20%); }
-.peace          { background-color: hsl(120, 57%, 28%) !important; --shadow-color: hsl(120, 100%, 14%); }
-.plague         { background-color: hsl(95, 19%, 33%) !important;  --shadow-color: hsl(95, 19%, 13%); }
-.psychic        { background-color: hsl(266, 9%, 36%) !important;  --shadow-color: hsl(266, 9%, 16%); }
-.smoke          { background-color: hsl(0, 0%, 22%) !important;    --shadow-color: hsl(0, 0%, 6%); }
-.speed          { background-color: hsl(216, 14%, 48%) !important; --shadow-color: hsl(216, 14%, 28%); }
-.spirit         { background-color: hsl(189, 26%, 26%) !important; --shadow-color: hsl(189, 26%, 10%); }
-.time           { background-color: hsl(0, 85%, 22%) !important;   --shadow-color: hsl(0, 0%, 20%); }
-.unity          { background-color: hsl(268, 61%, 36%) !important; --shadow-color: hsl(0, 0%, 20%); }
-.war            { background-color: hsl(348, 81%, 20%) !important; --shadow-color: hsl(348, 83%, 10%); }
-.water          { background-color: hsl(180, 8%, 50%) !important;  --shadow-color: hsl(180, 8%, 30%); }
+.apathy         { background-color: hsl(0, 0%, 56%) !important;   --shadow-color: hsl(0, 0%, 30%);      --protocol-color: hsl(0, 0%, 56%); }
+.assimilation   { background-color: hsl(0, 0%, 42%) !important;   --shadow-color: hsl(0, 0%, 22%);      --protocol-color: hsl(0, 0%, 42%); }
+.chaos          { background-color: hsl(241, 73%, 19%) !important; --shadow-color: hsl(0, 0%, 10%);      --protocol-color: hsl(241, 73%, 40%); }
+.clarity        { background-color: hsl(273, 68%, 30%) !important; --shadow-color: hsl(204, 100%, 10%);  --protocol-color: hsl(273, 68%, 50%); }
+.corruption     { background-color: hsl(75, 100%, 22%) !important; --shadow-color: hsl(75, 100%, 5%);    --protocol-color: hsl(75, 100%, 35%); }
+.courage        { background-color: hsl(34, 62%, 42%) !important;  --shadow-color: hsl(0, 0%, 40%);      --protocol-color: hsl(34, 62%, 55%); }
+.darkness       { background-color: hsl(54, 4%, 38%) !important;   --shadow-color: hsl(54, 4%, 18%);     --protocol-color: hsl(54, 4%, 55%); }
+.death          { background-color: hsl(229, 7%, 24%) !important;  --shadow-color: hsl(229, 7%, 8%);     --protocol-color: hsl(229, 7%, 45%); }
+.diversity      { background-color: hsl(56, 50%, 34%) !important;  --shadow-color: hsl(0, 0%, 20%);      --protocol-color: hsl(56, 50%, 50%); }
+.fear           { background-color: hsl(0, 78%, 36%) !important;   --shadow-color: hsl(0, 0%, 20%);      --protocol-color: hsl(0, 78%, 50%); }
+.fire           { background-color: hsl(30, 53%, 55%) !important;  --shadow-color: hsl(30, 53%, 30%);    --protocol-color: hsl(30, 53%, 60%); }
+.gravity        { background-color: hsl(325, 22%, 36%) !important; --shadow-color: hsl(325, 22%, 16%);   --protocol-color: hsl(325, 22%, 55%); }
+.hate           { background-color: hsl(1, 42%, 36%) !important;   --shadow-color: hsl(1, 42%, 16%);     --protocol-color: hsl(1, 42%, 55%); }
+.ice            { background-color: hsl(200, 80%, 40%) !important; --shadow-color: hsl(200, 100%, 20%);  --protocol-color: hsl(200, 80%, 55%); }
+.life           { background-color: hsl(58, 17%, 48%) !important;  --shadow-color: hsl(58, 17%, 28%);    --protocol-color: hsl(58, 17%, 60%); }
+.light          { background-color: hsl(35, 17%, 54%) !important;  --shadow-color: hsl(35, 17%, 34%);    --protocol-color: hsl(35, 17%, 65%); }
+.love           { background-color: hsl(352, 36%, 50%) !important; --shadow-color: hsl(352, 36%, 28%);   --protocol-color: hsl(352, 36%, 65%); }
+.luck           { background-color: hsl(39, 77%, 32%) !important;  --shadow-color: hsl(14, 85%, 18%);    --protocol-color: hsl(39, 77%, 50%); }
+.metal          { background-color: hsl(18, 6%, 36%) !important;   --shadow-color: hsl(18, 6%, 16%);     --protocol-color: hsl(18, 6%, 55%); }
+.mirror         { background-color: hsl(276, 48%, 34%) !important; --shadow-color: hsl(0, 0%, 20%);      --protocol-color: hsl(276, 48%, 55%); }
+.peace          { background-color: hsl(120, 57%, 28%) !important; --shadow-color: hsl(120, 100%, 14%);  --protocol-color: hsl(120, 57%, 45%); }
+.plague         { background-color: hsl(95, 19%, 33%) !important;  --shadow-color: hsl(95, 19%, 13%);    --protocol-color: hsl(95, 19%, 50%); }
+.psychic        { background-color: hsl(266, 9%, 36%) !important;  --shadow-color: hsl(266, 9%, 16%);    --protocol-color: hsl(266, 9%, 55%); }
+.smoke          { background-color: hsl(0, 0%, 22%) !important;    --shadow-color: hsl(0, 0%, 6%);       --protocol-color: hsl(0, 0%, 45%); }
+.speed          { background-color: hsl(216, 14%, 48%) !important; --shadow-color: hsl(216, 14%, 28%);   --protocol-color: hsl(216, 14%, 65%); }
+.spirit         { background-color: hsl(189, 26%, 26%) !important; --shadow-color: hsl(189, 26%, 10%);   --protocol-color: hsl(189, 26%, 45%); }
+.time           { background-color: hsl(0, 85%, 22%) !important;   --shadow-color: hsl(0, 0%, 20%);      --protocol-color: hsl(0, 85%, 40%); }
+.unity          { background-color: hsl(268, 61%, 36%) !important; --shadow-color: hsl(0, 0%, 20%);      --protocol-color: hsl(268, 61%, 55%); }
+.war            { background-color: hsl(348, 81%, 20%) !important; --shadow-color: hsl(348, 83%, 10%);   --protocol-color: hsl(348, 81%, 40%); }
+.water          { background-color: hsl(180, 8%, 50%) !important;  --shadow-color: hsl(180, 8%, 30%);    --protocol-color: hsl(180, 8%, 60%); }
+
+/* =====================================================
+   Protocol Card Background Graphics
+   Layered CSS gradients that suggest each protocol's
+   visual theme without using actual card images.
+   ===================================================== */
+
+/* Fire: flames rising from the base */
+.fixed-height-card.fire {
+    background-image:
+        radial-gradient(ellipse 90% 55% at 50% 105%, hsl(10, 100%, 38%) 0%, transparent 65%),
+        radial-gradient(ellipse 35% 50% at 25% 90%,  hsl(35, 100%, 50%) 0%, transparent 55%),
+        radial-gradient(ellipse 35% 50% at 75% 88%,  hsl(20, 90%, 44%)  0%, transparent 55%);
+}
+
+/* Water: depth layers and horizontal flow */
+.fixed-height-card.water {
+    background-image:
+        linear-gradient(180deg, transparent 30%, hsla(185, 60%, 28%, 0.55) 65%, hsla(185, 70%, 18%, 0.75) 100%),
+        radial-gradient(ellipse 120% 40% at 50% 70%, hsla(190, 70%, 50%, 0.3) 0%, transparent 70%),
+        repeating-linear-gradient(0deg, transparent, transparent 18px, hsla(190, 60%, 68%, 0.04) 18px, hsla(190, 60%, 68%, 0.04) 20px);
+}
+
+/* Death: cold blue-grey vignette, pale center glow */
+.fixed-height-card.death {
+    background-image:
+        radial-gradient(ellipse 70% 50% at 50% 45%, hsla(225, 30%, 42%, 0.4) 0%, transparent 70%),
+        radial-gradient(ellipse 100% 40% at 50% 100%, hsla(225, 20%, 6%, 0.8) 0%, transparent 60%),
+        linear-gradient(180deg, hsla(225, 20%, 6%, 0.3) 0%, transparent 40%);
+}
+
+/* Life: organic warmth, growth from below */
+.fixed-height-card.life {
+    background-image:
+        radial-gradient(ellipse 60% 70% at 50% 75%, hsla(80, 50%, 30%, 0.6) 0%, transparent 70%),
+        radial-gradient(ellipse 80% 40% at 50% 100%, hsla(60, 60%, 28%, 0.55) 0%, transparent 60%),
+        radial-gradient(ellipse 30% 30% at 68% 58%, hsla(90, 40%, 50%, 0.22) 0%, transparent 55%);
+}
+
+/* Light: starburst from above, warm gold radial */
+.fixed-height-card.light {
+    background-image:
+        radial-gradient(ellipse 80% 80% at 50% 15%, hsla(45, 80%, 78%, 0.35) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 50% at 50% 5%,  hsla(40, 90%, 88%, 0.2)  0%, transparent 50%),
+        linear-gradient(180deg, hsla(40, 60%, 68%, 0.15) 0%, transparent 50%);
+}
+
+/* Darkness: vignette corners closing in */
+.fixed-height-card.darkness {
+    background-image:
+        radial-gradient(ellipse 60% 50% at 50% 50%, hsla(55, 5%, 52%, 0.15) 0%, transparent 60%),
+        radial-gradient(ellipse 100% 60% at 0% 100%,   hsla(0, 0%, 4%, 0.65) 0%, transparent 55%),
+        radial-gradient(ellipse 100% 60% at 100% 100%, hsla(0, 0%, 4%, 0.65) 0%, transparent 55%);
+}
+
+/* Ice: crystalline diagonal shards, cool blue depth */
+.fixed-height-card.ice {
+    background-image:
+        linear-gradient(135deg, hsla(200, 90%, 78%, 0.2) 0%, transparent 28%, hsla(200, 80%, 68%, 0.14) 50%, transparent 70%),
+        radial-gradient(ellipse 80% 50% at 50% 82%, hsla(205, 85%, 30%, 0.55) 0%, transparent 65%),
+        linear-gradient(45deg, transparent 38%, hsla(200, 80%, 72%, 0.08) 48%, transparent 58%);
+}
+
+/* Spirit: ethereal concentric glow, teal */
+.fixed-height-card.spirit {
+    background-image:
+        radial-gradient(ellipse 70% 60% at 50% 50%, hsla(185, 50%, 48%, 0.3) 0%, transparent 65%),
+        radial-gradient(ellipse 40% 40% at 30% 68%, hsla(190, 60%, 55%, 0.2) 0%, transparent 55%),
+        radial-gradient(ellipse 40% 40% at 68% 28%, hsla(180, 50%, 50%, 0.15) 0%, transparent 50%);
+}
+
+/* Psychic: concentric ripple rings, deep purple */
+.fixed-height-card.psychic {
+    background-image:
+        radial-gradient(ellipse 90% 70% at 50% 55%, transparent 30%, hsla(266, 20%, 22%, 0.4) 48%, transparent 65%),
+        radial-gradient(ellipse 60% 45% at 50% 55%, transparent 14%, hsla(266, 25%, 42%, 0.25) 28%, transparent 43%),
+        radial-gradient(ellipse 30% 20% at 50% 55%, hsla(266, 30%, 62%, 0.15) 0%, transparent 100%);
+}
+
+/* Metal: diagonal metallic sheen bands */
+.fixed-height-card.metal {
+    background-image:
+        linear-gradient(135deg, transparent 18%, hsla(18, 10%, 52%, 0.22) 28%, transparent 38%, hsla(18, 8%, 58%, 0.15) 50%, transparent 60%),
+        radial-gradient(ellipse 80% 40% at 50% 100%, hsla(18, 8%, 18%, 0.65) 0%, transparent 60%),
+        linear-gradient(160deg, hsla(18, 10%, 62%, 0.1) 0%, transparent 40%);
+}
+
+/* Gravity: mass pulling toward a singularity */
+.fixed-height-card.gravity {
+    background-image:
+        radial-gradient(ellipse 50% 50% at 50% 60%, hsla(325, 30%, 18%, 0.65) 0%, transparent 55%),
+        radial-gradient(ellipse 100% 80% at 50% 65%, hsla(325, 25%, 38%, 0.25) 0%, transparent 70%),
+        linear-gradient(180deg, transparent 28%, hsla(325, 20%, 12%, 0.45) 100%);
+}
+
+/* Speed: diagonal motion streaks */
+.fixed-height-card.speed {
+    background-image:
+        linear-gradient(75deg, transparent 18%, hsla(216, 30%, 62%, 0.15) 23%, transparent 28%),
+        linear-gradient(75deg, transparent 34%, hsla(216, 30%, 68%, 0.1)  39%, transparent 44%),
+        linear-gradient(75deg, transparent 50%, hsla(216, 30%, 62%, 0.12) 55%, transparent 60%),
+        radial-gradient(ellipse 90% 40% at 50% 100%, hsla(216, 25%, 28%, 0.55) 0%, transparent 60%);
+}
+
+/* Love: soft warm radials, rose bloom */
+.fixed-height-card.love {
+    background-image:
+        radial-gradient(ellipse 70% 60% at 50% 42%, hsla(352, 50%, 62%, 0.3) 0%, transparent 60%),
+        radial-gradient(ellipse 90% 40% at 50% 100%, hsla(345, 45%, 28%, 0.55) 0%, transparent 60%),
+        radial-gradient(ellipse 40% 40% at 50% 32%, hsla(355, 55%, 72%, 0.15) 0%, transparent 50%);
+}
+
+/* Plague: murky organic pools */
+.fixed-height-card.plague {
+    background-image:
+        radial-gradient(ellipse 60% 50% at 35% 65%, hsla(85, 30%, 22%, 0.6) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 40% at 70% 75%, hsla(95, 35%, 18%, 0.55) 0%, transparent 55%),
+        radial-gradient(ellipse 40% 30% at 55% 45%, hsla(80, 25%, 38%, 0.25) 0%, transparent 50%);
+}
+
+/* Hate: harsh angular shadows from corners */
+.fixed-height-card.hate {
+    background-image:
+        linear-gradient(148deg, hsla(1, 55%, 18%, 0.55) 0%, transparent 42%),
+        linear-gradient(328deg, hsla(1, 60%, 18%, 0.6) 0%, transparent 42%),
+        radial-gradient(ellipse 70% 40% at 50% 88%, hsla(1, 50%, 12%, 0.65) 0%, transparent 60%);
+}
+
+/* Chaos: clashing swirling multi-radials */
+.fixed-height-card.chaos {
+    background-image:
+        radial-gradient(ellipse 50% 60% at 22% 60%, hsla(250, 80%, 28%, 0.55) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 60% at 78% 38%, hsla(200, 70%, 32%, 0.45) 0%, transparent 60%),
+        radial-gradient(ellipse 40% 40% at 55% 78%, hsla(300, 60%, 22%, 0.4) 0%, transparent 55%);
+}
+
+/* Peace: gentle soft diffuse green glow */
+.fixed-height-card.peace {
+    background-image:
+        radial-gradient(ellipse 80% 70% at 50% 50%, hsla(120, 45%, 38%, 0.35) 0%, transparent 65%),
+        radial-gradient(ellipse 60% 40% at 50% 82%, hsla(120, 50%, 22%, 0.45) 0%, transparent 60%),
+        linear-gradient(180deg, hsla(120, 40%, 58%, 0.08) 0%, transparent 40%);
+}
+
+/* War: dark bloody vignette */
+.fixed-height-card.war {
+    background-image:
+        linear-gradient(143deg, hsla(348, 80%, 10%, 0.75) 0%, transparent 42%),
+        linear-gradient(323deg, hsla(348, 80%, 10%, 0.65) 0%, transparent 42%),
+        radial-gradient(ellipse 90% 45% at 50% 100%, hsla(348, 70%, 6%, 0.75) 0%, transparent 60%);
+}
+
+/* Time: crimson concentric clock rings */
+.fixed-height-card.time {
+    background-image:
+        radial-gradient(ellipse 80% 60% at 50% 50%, transparent 20%, hsla(0, 70%, 12%, 0.42) 34%, transparent 50%),
+        radial-gradient(ellipse 55% 40% at 50% 50%, transparent 10%, hsla(0, 75%, 22%, 0.3) 22%, transparent 34%),
+        radial-gradient(ellipse 30% 20% at 50% 50%, hsla(0, 80%, 42%, 0.2) 0%, transparent 100%);
+}
+
+/* Smoke: drifting dark wisps */
+.fixed-height-card.smoke {
+    background-image:
+        radial-gradient(ellipse 60% 80% at 28% 58%, hsla(0, 0%, 38%, 0.28) 0%, transparent 65%),
+        radial-gradient(ellipse 60% 70% at 72% 38%, hsla(0, 0%, 42%, 0.22) 0%, transparent 60%),
+        linear-gradient(180deg, transparent 18%, hsla(0, 0%, 4%, 0.55) 100%);
+}
+
+/* Fear: red vignette with darkness closing in */
+.fixed-height-card.fear {
+    background-image:
+        radial-gradient(ellipse 50% 40% at 50% 45%, hsla(0, 60%, 32%, 0.22) 0%, transparent 60%),
+        radial-gradient(ellipse 100% 60% at 0% 100%,   hsla(0, 70%, 8%, 0.75) 0%, transparent 55%),
+        radial-gradient(ellipse 100% 60% at 100% 0%,   hsla(0, 70%, 8%, 0.55) 0%, transparent 55%);
+}
+
+/* Corruption: sickly green pools, oozing */
+.fixed-height-card.corruption {
+    background-image:
+        radial-gradient(ellipse 70% 50% at 50% 65%, hsla(75, 80%, 18%, 0.6) 0%, transparent 60%),
+        radial-gradient(ellipse 40% 35% at 25% 38%, hsla(80, 70%, 22%, 0.38) 0%, transparent 55%),
+        radial-gradient(ellipse 30% 25% at 75% 32%, hsla(70, 80%, 20%, 0.32) 0%, transparent 50%);
+}
+
+/* Mirror: iridescent prismatic shimmer */
+.fixed-height-card.mirror {
+    background-image:
+        linear-gradient(135deg, hsla(276, 60%, 68%, 0.16) 0%, transparent 28%, hsla(200, 60%, 68%, 0.1) 50%, transparent 68%, hsla(340, 50%, 68%, 0.1) 90%),
+        radial-gradient(ellipse 80% 60% at 50% 50%, hsla(276, 50%, 52%, 0.2) 0%, transparent 65%),
+        linear-gradient(45deg, transparent 28%, hsla(276, 70%, 78%, 0.08) 48%, transparent 68%);
+}
+
+/* Unity: radials converging from edges */
+.fixed-height-card.unity {
+    background-image:
+        radial-gradient(ellipse 50% 50% at 0%   0%,   hsla(268, 60%, 38%, 0.32) 0%, transparent 55%),
+        radial-gradient(ellipse 50% 50% at 100% 0%,   hsla(268, 55%, 38%, 0.32) 0%, transparent 55%),
+        radial-gradient(ellipse 60% 50% at 50%  100%, hsla(268, 65%, 28%, 0.48) 0%, transparent 60%);
+}
+
+/* Clarity: clean light rays descending */
+.fixed-height-card.clarity {
+    background-image:
+        radial-gradient(ellipse 60% 70% at 50% 18%, hsla(273, 70%, 62%, 0.32) 0%, transparent 60%),
+        radial-gradient(ellipse 80% 40% at 50% 100%, hsla(273, 60%, 18%, 0.55) 0%, transparent 55%),
+        linear-gradient(180deg, hsla(273, 60%, 58%, 0.1) 0%, transparent 42%);
+}
+
+/* Courage: warm surge upward, orange heat */
+.fixed-height-card.courage {
+    background-image:
+        radial-gradient(ellipse 80% 60% at 50% 100%, hsla(34, 70%, 32%, 0.65) 0%, transparent 65%),
+        radial-gradient(ellipse 50% 70% at 50% 78%, hsla(34, 65%, 48%, 0.32) 0%, transparent 65%),
+        linear-gradient(180deg, transparent 38%, hsla(34, 60%, 22%, 0.42) 100%);
+}
+
+/* Diversity: scattered multicolored radial patches */
+.fixed-height-card.diversity {
+    background-image:
+        radial-gradient(ellipse 40% 35% at 22% 58%, hsla(0,   60%, 42%, 0.28) 0%, transparent 55%),
+        radial-gradient(ellipse 40% 35% at 78% 52%, hsla(200, 60%, 42%, 0.28) 0%, transparent 55%),
+        radial-gradient(ellipse 40% 35% at 50% 78%, hsla(120, 55%, 32%, 0.28) 0%, transparent 55%);
+}
+
+/* Luck: golden glimmers, scattered sparks */
+.fixed-height-card.luck {
+    background-image:
+        radial-gradient(ellipse 30% 25% at 28% 32%, hsla(48, 90%, 58%, 0.32) 0%, transparent 55%),
+        radial-gradient(ellipse 25% 20% at 72% 52%, hsla(42, 85%, 52%, 0.28) 0%, transparent 50%),
+        radial-gradient(ellipse 40% 35% at 50% 82%, hsla(39, 80%, 38%, 0.48) 0%, transparent 60%);
+}
+
+/* Assimilation: grey absorption vortex ring */
+.fixed-height-card.assimilation {
+    background-image:
+        radial-gradient(ellipse 80% 60% at 50% 50%, transparent 24%, hsla(0, 0%, 18%, 0.42) 44%, transparent 65%),
+        radial-gradient(ellipse 50% 40% at 50% 50%, hsla(0, 0%, 58%, 0.15) 0%, transparent 100%),
+        linear-gradient(180deg, transparent 18%, hsla(0, 0%, 8%, 0.52) 100%);
+}
+
+/* Apathy: barely-there muted fade */
+.fixed-height-card.apathy {
+    background-image:
+        radial-gradient(ellipse 80% 60% at 50% 62%, hsla(0, 0%, 62%, 0.15) 0%, transparent 70%),
+        linear-gradient(180deg, transparent 28%, hsla(0, 0%, 32%, 0.32) 100%);
+}
 
 /* =====================================================
    Navbar
@@ -89,15 +343,22 @@ nav {
     line-height: normal !important;
 }
 
+.navbar-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 997;
+}
+
 .nav-wrapper.header {
     background: linear-gradient(135deg, #1a0d28 0%, #2d1048 50%, var(--color-accent-dark) 100%);
     border-bottom: 2px solid var(--color-accent);
     display: flex;
     align-items: center;
-    padding: 10px 20px;
+    padding: 0 20px;
     gap: 16px;
-    flex-wrap: wrap;
-    min-height: 64px;
+    height: 52px;
 }
 
 .brand-logo {
@@ -111,14 +372,14 @@ nav {
 }
 
 .nav-logo {
-    height: 40px;
+    height: 32px;
     width: auto;
 }
 
 .nav-title {
     font-family: var(--font-brand);
     font-weight: 700;
-    font-size: 1.1em;
+    font-size: var(--text-sm);
     text-transform: uppercase;
     letter-spacing: 0.05em;
     color: var(--color-white);
@@ -130,7 +391,6 @@ nav {
     display: flex !important;
     align-items: center;
     gap: 10px;
-    flex-wrap: wrap;
     margin-left: auto;
     position: static !important;
     height: auto !important;
@@ -143,7 +403,7 @@ nav {
     align-items: center;
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid var(--color-border);
-    border-radius: var(--radius-xl);
+    border-radius: 9999px;
     padding: 0 12px;
     transition: border-color var(--transition), background var(--transition);
 }
@@ -156,7 +416,7 @@ nav {
 
 .search-icon {
     color: var(--color-text-muted);
-    font-size: 20px;
+    font-size: 18px;
     margin-right: 6px;
     flex-shrink: 0;
 }
@@ -167,11 +427,12 @@ nav {
     box-shadow: none !important;
     color: var(--color-text) !important;
     font-family: var(--font-body);
-    font-size: 0.9em;
-    height: 36px !important;
+    font-size: var(--text-sm);
+    height: 32px !important;
     margin: 0 !important;
     padding: 0 !important;
     width: 180px;
+    outline: none;
 }
 
 #card-search::placeholder {
@@ -183,6 +444,8 @@ nav {
 }
 
 #clear-search {
+    background: transparent;
+    border: none;
     color: var(--color-text-muted) !important;
     height: 28px !important;
     line-height: 28px !important;
@@ -190,6 +453,10 @@ nav {
     width: 28px !important;
     border-radius: 50%;
     transition: color var(--transition);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #clear-search:hover {
@@ -198,7 +465,6 @@ nav {
 
 #clear-search .material-icons {
     font-size: 18px;
-    line-height: 28px;
 }
 
 /* Filter button */
@@ -208,10 +474,10 @@ nav {
     gap: 6px;
     background: rgba(145, 84, 171, 0.2);
     border: 1px solid rgba(145, 84, 171, 0.5);
-    border-radius: var(--radius-xl);
+    border-radius: 9999px;
     color: var(--color-white) !important;
     font-family: var(--font-brand);
-    font-size: 0.75em;
+    font-size: var(--text-xs);
     font-weight: 700;
     letter-spacing: 0.05em;
     padding: 6px 14px !important;
@@ -220,6 +486,7 @@ nav {
     white-space: nowrap;
     cursor: pointer;
     position: relative;
+    text-decoration: none;
 }
 
 .filter-btn:hover {
@@ -236,7 +503,7 @@ nav {
     background: var(--color-accent);
     border-radius: 50%;
     color: var(--color-white);
-    font-size: 0.75em;
+    font-size: var(--text-xs);
     font-weight: 700;
     height: 20px;
     line-height: 20px;
@@ -254,11 +521,12 @@ nav {
     color: var(--color-text-muted) !important;
     cursor: pointer;
     display: flex !important;
-    height: 36px;
+    height: 34px;
     justify-content: center;
     transition: background var(--transition), color var(--transition), border-color var(--transition);
-    width: 36px;
+    width: 34px;
     flex-shrink: 0;
+    text-decoration: none;
 }
 
 .nav-icon-btn:hover {
@@ -267,17 +535,64 @@ nav {
     color: var(--color-white) !important;
 }
 
-/* =====================================================
-   Filter Modal
-   ===================================================== */
-.modal.filter-modal {
-    background: #1a1028;
+/* CSS-only tooltips */
+[data-tooltip] {
+    position: relative;
+}
+
+[data-tooltip]::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(20, 12, 32, 0.95);
     border: 1px solid var(--color-accent);
-    border-radius: var(--radius-lg) !important;
-    box-shadow: 0 24px 64px rgba(0, 0, 0, 0.6);
-    max-height: 85vh !important;
-    width: 680px !important;
-    overflow: hidden;
+    border-radius: var(--radius-sm);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    font-size: var(--text-xs);
+    padding: 6px 10px;
+    white-space: nowrap;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    z-index: 9999;
+    max-width: 280px;
+    white-space: normal;
+    text-align: center;
+}
+
+[data-tooltip]:hover::after {
+    opacity: 1;
+}
+
+/* =====================================================
+   Filter Sidebar (dialog)
+   ===================================================== */
+dialog.filter-sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 380px;
+    max-width: 90vw;
+    border: none;
+    padding: 0;
+    background: var(--color-bg-alt);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    overflow-y: auto;
+    z-index: 1000;
+    margin: 0;
+}
+
+dialog.filter-sidebar[open] {
+    transform: translateX(0);
+}
+
+dialog.filter-sidebar::backdrop {
+    background: rgba(0, 0, 0, 0.55);
 }
 
 .modal-header-bar {
@@ -287,69 +602,85 @@ nav {
     color: var(--color-white);
     display: flex;
     font-family: var(--font-brand);
-    font-size: 1.1em;
+    font-size: var(--text-lg);
     font-weight: 700;
     gap: 10px;
     letter-spacing: 0.08em;
     padding: 14px 20px;
     text-transform: uppercase;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .modal-filter-badge {
     background: var(--color-accent);
     border-radius: 12px;
     color: var(--color-white);
-    font-size: 0.7em;
+    font-size: var(--text-xs);
     font-weight: 700;
     padding: 2px 8px;
 }
 
-.filter-modal-content {
-    background: #1a1028;
+.filter-sidebar-content {
+    background: var(--color-bg-alt);
     color: var(--color-text);
     overflow-y: auto;
-    padding: 20px !important;
-    height: calc(100% - 60px) !important;
+    padding: 20px;
 }
 
-.modal-footer {
-    background: rgba(26, 16, 40, 0.95) !important;
-    border-top: 1px solid var(--color-border) !important;
+.filter-sidebar-footer {
+    background: rgba(21, 33, 48, 0.98);
+    border-top: 1px solid var(--color-border);
     display: flex;
     gap: 10px;
     justify-content: flex-end;
-    padding: 12px 20px !important;
+    padding: 12px 20px;
+    position: sticky;
+    bottom: 0;
+    z-index: 1;
 }
 
 .modal-filter-clear {
+    background: transparent;
+    border: none;
     color: var(--color-text-muted) !important;
     font-family: var(--font-brand);
-    font-size: 0.75em;
+    font-size: var(--text-xs);
     font-weight: 700;
     letter-spacing: 0.05em;
     text-transform: uppercase;
     transition: color var(--transition);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    text-decoration: none;
+    padding: 6px 12px;
 }
 
 .modal-filter-clear:hover {
     color: var(--color-white) !important;
 }
 
-.modal-close-btn {
+.filter-done-btn {
     background: var(--color-accent) !important;
-    border-radius: var(--radius-xl) !important;
-    font-family: var(--font-brand) !important;
-    font-size: 0.75em !important;
-    font-weight: 700 !important;
-    letter-spacing: 0.08em !important;
-    padding: 0 20px !important;
-    text-transform: uppercase !important;
-    transition: background var(--transition), box-shadow var(--transition) !important;
+    border: none;
+    border-radius: 9999px;
+    color: var(--color-white);
+    font-family: var(--font-brand);
+    font-size: var(--text-xs);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    padding: 8px 20px;
+    text-transform: uppercase;
+    transition: background var(--transition), box-shadow var(--transition);
+    cursor: pointer;
 }
 
-.modal-close-btn:hover {
+.filter-done-btn:hover {
     background: var(--color-accent-light) !important;
-    box-shadow: 0 4px 16px rgba(145, 84, 171, 0.5) !important;
+    box-shadow: 0 4px 16px rgba(145, 84, 171, 0.5);
 }
 
 /* Filter groups */
@@ -363,7 +694,7 @@ nav {
 .filter-group legend {
     color: var(--color-accent-light);
     font-family: var(--font-brand);
-    font-size: 0.7em;
+    font-size: var(--text-xs);
     font-weight: 700;
     letter-spacing: 0.1em;
     padding: 0 6px;
@@ -392,17 +723,17 @@ nav {
 .chip-checkbox label {
     background: rgba(255, 255, 255, 0.07);
     border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: var(--radius-xl);
+    border-radius: 9999px;
     color: var(--color-text) !important;
     cursor: pointer;
     display: inline-block;
     font-family: var(--font-brand);
-    font-size: 0.65em;
+    font-size: var(--text-xs);
     font-weight: 700;
     letter-spacing: 0.06em;
     padding: 5px 13px;
     text-transform: uppercase;
-    transition: background var(--transition), border-color var(--transition), color var(--transition), box-shadow var(--transition);
+    transition: background var(--transition), border-color var(--transition), color var(--transition), box-shadow var(--transition), transform var(--transition);
     user-select: none;
     white-space: nowrap;
 }
@@ -418,6 +749,53 @@ nav {
     border-color: var(--color-accent-light);
     box-shadow: 0 2px 10px rgba(145, 84, 171, 0.45);
     color: var(--color-white) !important;
+    transform: scale(0.95);
+}
+
+.chip-checkbox label:active {
+    transform: scale(0.95);
+}
+
+/* =====================================================
+   Active Filter Chips in Toolbar
+   ===================================================== */
+#active-filter-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    align-items: center;
+}
+
+.active-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: rgba(145, 84, 171, 0.25);
+    border: 1px solid rgba(145, 84, 171, 0.55);
+    border-radius: 9999px;
+    color: var(--color-white);
+    font-family: var(--font-brand);
+    font-size: var(--text-xs);
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    padding: 3px 10px 3px 10px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.chip-remove {
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    padding: 0 0 0 2px;
+    transition: color var(--transition);
+}
+
+.chip-remove:hover {
+    color: var(--color-white);
 }
 
 /* =====================================================
@@ -426,57 +804,75 @@ nav {
 #view-toolbar {
     align-items: center;
     display: flex;
-    gap: 16px;
+    flex-wrap: wrap;
+    gap: 12px;
     justify-content: space-between;
-    margin: 10px auto 8px;
+    margin: 0 auto 8px;
     padding: 10px 20px;
     width: 90%;
     max-width: none;
+    position: sticky;
+    top: 52px;
+    z-index: 50;
+    background: rgba(15, 25, 35, 0.85);
+    backdrop-filter: blur(8px);
 }
 
 .card-count-label {
     color: var(--color-text-muted);
     font-family: var(--font-brand);
-    font-size: 0.7em;
+    font-size: var(--text-xs);
     font-weight: 700;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+    flex-shrink: 0;
 }
 
+/* Segmented group toggle */
 .group-toggle {
     display: flex;
-    gap: 6px;
+    gap: 0;
 }
 
 .group-btn {
     align-items: center;
     background: rgba(255, 255, 255, 0.06);
     border: 1px solid var(--color-border);
-    border-radius: var(--radius-xl);
     color: var(--color-text-muted) !important;
     cursor: pointer;
     display: flex !important;
     font-family: var(--font-brand);
-    font-size: 0.65em;
+    font-size: var(--text-xs);
     font-weight: 700;
     gap: 6px;
     letter-spacing: 0.07em;
     padding: 6px 14px;
     text-transform: uppercase;
     transition: background var(--transition), color var(--transition), border-color var(--transition), box-shadow var(--transition);
+    text-decoration: none;
+}
+
+.group-btn:first-child {
+    border-radius: var(--radius-xl) 0 0 var(--radius-xl);
+    border-right: none;
+}
+
+.group-btn:last-child {
+    border-radius: 0 var(--radius-xl) var(--radius-xl) 0;
 }
 
 .group-btn:hover {
     background: rgba(255, 255, 255, 0.12);
-    border-color: rgba(255, 255, 255, 0.35);
     color: var(--color-white) !important;
+    z-index: 1;
 }
 
 .group-btn.active-group {
-    background: rgba(145, 84, 171, 0.3);
+    background: rgba(145, 84, 171, 0.35);
     border-color: var(--color-accent);
-    box-shadow: 0 0 10px rgba(145, 84, 171, 0.25);
+    box-shadow: inset 0 0 8px rgba(145, 84, 171, 0.2);
     color: var(--color-white) !important;
+    z-index: 1;
 }
 
 .group-btn .material-icons {
@@ -487,47 +883,80 @@ nav {
    Container & Layout
    ===================================================== */
 .container {
-    max-width: none !important;
+    max-width: 980px;
+    margin: 0 auto;
     padding: 0 20px;
-    width: 90% !important;
+    width: 100%;
 }
 
-.row {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    justify-content: center !important;
-    align-items: flex-start !important;
+/* Card grid container */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 16px;
-    margin: 0 !important;
     padding: 10px 0;
+    width: 100%;
+    justify-items: center;
+    justify-content: center;
 }
 
 .card-col {
-    padding: 0 !important;
-    flex: 0 0 auto;
+    display: contents;
+}
+
+/* Ungrouped flat grid */
+.row {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    justify-content: center;
+    gap: 16px;
+    margin: 0 !important;
+    padding: 10px 0;
+    width: 100%;
+    justify-items: center;
 }
 
 /* =====================================================
-   Protocol Collapsible
+   Protocol Collapsible (native)
    ===================================================== */
-#protocolList li {
-    margin-bottom: 8px !important;
+#protocolList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.collapsible {
-    border: none !important;
-    box-shadow: none !important;
+#protocolList li {
+    margin-bottom: 8px;
+}
+
+.collapsible-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.3s ease;
+    opacity: 0;
+    background: rgba(26, 16, 40, 0.35);
+    border: 1px solid rgba(145, 84, 171, 0.3);
+    border-radius: var(--radius-lg);
+    margin-top: 4px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+li.active .collapsible-body {
+    max-height: 8000px;
+    opacity: 1;
+    padding: 4px 4px 8px;
 }
 
 .protocol-header {
     align-items: center;
     border: 1px solid var(--color-border) !important;
     border-radius: var(--radius-lg) !important;
+    border-left: 4px solid var(--protocol-color, var(--color-accent)) !important;
     color: var(--color-white);
     cursor: pointer;
     display: flex !important;
     font-family: var(--font-brand);
-    font-size: 1em;
+    font-size: var(--text-base);
     font-weight: 700;
     gap: 12px;
     justify-content: space-between;
@@ -549,19 +978,19 @@ nav {
 }
 
 .protocol-header-top {
-    font-size: 1em;
+    font-size: var(--text-base);
     line-height: 1.3;
 }
 
 .protocol-subtitle {
-    font-size: 0.7em;
+    font-size: var(--text-xs);
     font-weight: 400;
     opacity: 0.8;
     letter-spacing: 0.02em;
 }
 
 .protocol-header-bottom {
-    font-size: 0.65em;
+    font-size: var(--text-xs);
     font-weight: 400;
     letter-spacing: 0.06em;
     margin-top: 4px;
@@ -571,27 +1000,47 @@ nav {
 .protocol-badge {
     background: rgba(0, 0, 0, 0.3);
     border: 1px solid rgba(255, 255, 255, 0.25);
-    border-radius: var(--radius-xl);
+    border-radius: 9999px;
     color: var(--color-white);
     flex-shrink: 0;
     font-family: var(--font-brand);
-    font-size: 0.7em;
+    font-size: var(--text-xs);
     font-weight: 700;
     padding: 3px 11px;
 }
 
-.collapsible-body {
-    background: rgba(26, 16, 40, 0.35) !important;
-    border: 1px solid rgba(145, 84, 171, 0.3) !important;
-    border-radius: var(--radius-lg) !important;
-    margin-top: 4px;
-    padding: 4px 4px 8px !important;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+/* Chevron icon */
+.chevron-icon {
+    transition: transform 0.3s ease;
+    margin-left: auto;
+    flex-shrink: 0;
+    font-size: 20px;
+}
+
+li.active .chevron-icon {
+    transform: rotate(180deg);
 }
 
 /* =====================================================
    Cards
    ===================================================== */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Apply animation to direct grid children (for ungrouped) and collapsible-body contents */
+.row > .fixed-height-card,
+li.active .collapsible-body .fixed-height-card {
+    animation: fadeInUp 0.3s ease both;
+}
+
+/* Stagger first 12 only; beyond that skip animation */
+.row > .fixed-height-card:nth-child(n+13),
+li.active .collapsible-body .fixed-height-card:nth-child(n+13) {
+    animation: none;
+}
+
 .fixed-height-card {
     border-radius: var(--radius-lg) !important;
     border: 1px solid rgba(255, 255, 255, 0.2) !important;
@@ -601,18 +1050,30 @@ nav {
     height: 580px;
     max-height: 580px;
     min-height: 580px;
-    min-width: 390px;
-    width: 390px;
+    width: 100%;
+    max-width: 420px;
     overflow: hidden;
     position: relative;
     transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
     filter: drop-shadow(4px 8px 12px var(--shadow-color));
 }
 
+/* Gloss overlay */
+.fixed-height-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 40%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, transparent 100%);
+    pointer-events: none;
+    border-radius: inherit;
+    z-index: 1;
+}
+
 .fixed-height-card:hover {
-    transform: translateY(-4px) scale(1.01);
+    transform: translateY(-6px) scale(1.02);
     border-color: rgba(255, 255, 255, 0.45) !important;
-    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.55), 0 4px 12px rgba(0, 0, 0, 0.4) !important;
+    box-shadow: var(--shadow-card), 0 0 28px var(--shadow-color, rgba(145, 84, 171, 0.4)) !important;
 }
 
 .fixed-height-card .card-content {
@@ -642,12 +1103,12 @@ nav {
     align-items: center;
     flex: 1;
     font-family: var(--font-brand);
-    font-size: 0.85em;
+    font-size: var(--text-sm);
     font-weight: 700;
     letter-spacing: 0.04em;
     min-width: 0;
     overflow: hidden;
-    padding: 8px 10px;
+    padding: 10px 12px;
     text-overflow: ellipsis;
     text-transform: uppercase;
     white-space: nowrap;
@@ -667,7 +1128,7 @@ nav {
     font-weight: 900;
     justify-content: center;
     min-width: 64px;
-    padding: 6px 12px;
+    padding: 8px 14px;
     text-align: center;
     text-transform: uppercase;
 }
@@ -689,15 +1150,20 @@ nav {
     border-radius: var(--radius-sm);
     box-sizing: border-box;
     flex: 1;
-    font-size: 1.1em;
+    font-size: var(--text-base);
     line-height: 1.45;
     min-height: 0;
     overflow: hidden;
-    padding: 10px 12px 10px;
+    padding: 10px 12px;
     position: relative;
     text-overflow: ellipsis;
     width: 100%;
     transition: background var(--transition);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.card-section:last-child {
+    border-bottom: none;
 }
 
 .card-section.has-background {
@@ -742,66 +1208,22 @@ nav {
     text-underline-offset: 2px;
 }
 
-/* Set text */
+/* Set text — styled as a small tag */
 .set-text {
-    bottom: 7px;
-    color: rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: var(--radius-sm);
+    color: rgba(255, 255, 255, 0.6);
     font-family: var(--font-brand);
-    font-size: 0.6em;
+    font-size: var(--text-xs);
     font-weight: 700;
     letter-spacing: 0.1em;
+    padding: 2px 8px;
     position: absolute;
-    right: 12px;
+    bottom: 7px;
+    right: 10px;
     text-transform: uppercase;
-}
-
-/* =====================================================
-   Materialize overrides
-   ===================================================== */
-.badge {
-    font-family: var(--font-brand);
-    font-weight: 700;
-    text-transform: uppercase;
-    color: var(--color-white) !important;
-    font-size: 1em !important;
-    background: none !important;
-}
-
-.btn {
-    background-color: var(--color-accent) !important;
-    border-radius: var(--radius-xl) !important;
-    font-family: var(--font-brand) !important;
-}
-
-.card {
-    border-radius: var(--radius-lg) !important;
-}
-
-.input-field {
-    max-width: 90% !important;
-    margin-left: 25px !important;
-    margin-top: 10px !important;
-}
-
-.select-wrapper {
-    margin-bottom: 20px !important;
-}
-
-.select-dropdown {
-    padding-top: 15px !important;
-    font-family: var(--font-brand);
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-/* Tooltip override */
-.material-tooltip {
-    background: rgba(20, 12, 32, 0.95) !important;
-    border: 1px solid var(--color-accent);
-    border-radius: var(--radius-sm) !important;
-    font-size: 0.82em !important;
-    max-width: 280px;
-    padding: 8px 12px !important;
 }
 
 /* =====================================================
@@ -809,16 +1231,16 @@ nav {
    ===================================================== */
 @media (max-width: 720px) {
     .nav-wrapper.header {
-        padding: 8px 12px;
+        padding: 0 12px;
         gap: 10px;
     }
 
     .nav-title {
-        font-size: 0.85em;
+        font-size: var(--text-xs);
     }
 
     .nav-logo {
-        height: 32px;
+        height: 28px;
     }
 
     #card-search {
@@ -829,16 +1251,6 @@ nav {
         display: none;
     }
 
-    .modal.filter-modal {
-        width: 100% !important;
-        border-radius: var(--radius-md) !important;
-    }
-
-    .fixed-height-card {
-        min-width: 340px;
-        width: 340px;
-    }
-
     #view-toolbar {
         padding: 6px 12px;
         width: 96%;
@@ -846,20 +1258,58 @@ nav {
 }
 
 @media (max-width: 480px) {
+    body {
+        padding-top: 52px;
+    }
+
     #card-search {
         width: 90px;
     }
 
+    /* Single column cards */
+    .cards-container,
+    .row {
+        grid-template-columns: 1fr;
+    }
+
     .fixed-height-card {
-        min-width: 300px;
-        width: 300px;
         height: 520px;
         min-height: 520px;
         max-height: 520px;
+        max-width: 100%;
     }
 
     .custom-card-title .value {
         font-size: 1.7em;
         min-width: 52px;
+    }
+
+    /* Bottom sheet filter on mobile */
+    dialog.filter-sidebar {
+        width: 100%;
+        height: 70vh;
+        top: auto;
+        bottom: 0;
+        right: 0;
+        transform: translateY(110%);
+        border-radius: 16px 16px 0 0;
+    }
+
+    dialog.filter-sidebar[open] {
+        transform: translateY(0);
+    }
+
+    /* Touch targets */
+    .chip-checkbox label,
+    .group-btn {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .nav-icon-btn,
+    .filter-btn {
+        min-height: 44px;
+        min-width: 44px;
     }
 }
